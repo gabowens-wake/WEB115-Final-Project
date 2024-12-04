@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!--
+
+      Perfectly Portioned Fitness
+      Name: George Bowens
+      Date: 12/04/2024
+
+   -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <style>
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+
+        label {
+
+            font-weight: bold;
+        }
+
+        button[type="submit"] {
+            display: block;
+
+            padding: 8px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        table, th, td { 
+            border: 1px solid black; 
+            border-collapse: collapse; 
+            padding: 5px; 
+        } 
+        table { 
+            width: 100%; 
+        } 
+        th { 
+            background-color: #463b3b; 
+        }
+        
+    </style>
+    <link rel="stylesheet" href="simplecss.css">
+    <script src="projectJS.js"></script>
+</head>
+<body>
+
+    <h1></h1>
+    <header>
+        <img src="banner3.jpeg" alt="Banner Image" class="banner">
+    </header>
+
+    <form id = "MealForm">
+        <label for="name">Name:</label>
+        <input type="text" id ="name" name= "name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id ="email" email="email" required>
+
+        <label for="goal">Goal:</label>
+        <input type="text" id="goal" goal="goal" >
+
+        
+
+        <h2>Enter your meal plan for the week:</h2> 
+        <p>Welcome to the Meal Plan Constructor. Please take advantage of our new service that allows you to generate a weekly meal plan. Enter your name, a valid email address, and weekly goal. Then you will be able to generate a daily meal plan that can be downloaded or printed </p>
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Day</th> 
+                        <th>Breakfast</th> 
+                        <th>Morning Snack</th> 
+                        <th>Lunch</th> 
+                        <th>Afternoon Snack</th> 
+                        <th>Dinner</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <script> 
+                        document.write(generateTableRows()); 
+                    </script>
+                </tbody> 
+        </table>
+    
+
+        <button type="button" onclick="generateMealPlan()">Generate Meal</button>
+        <button type="button" onclick="clearPlanner()">Clear Planner</button> 
+
+
+    </form>
+
+
+
+</body>
+</html>

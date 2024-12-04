@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    color: #fffead;
+    background-color:#2d5109;
+}
+
+button[type="submit"] { 
+    display: block; 
+    padding: 8px; 
+    font-size: 14px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
